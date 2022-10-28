@@ -6,7 +6,7 @@ const FollowingList = ({data, details}) =>{
 
     return(
         <div className="followingList same">
-            {details.following === undefined ? <h3>No followersList is Available</h3> : (
+            {details.following === 0 ? <h3>No followersList is Available</h3> : (
                 <>
             <table>
                 <thead>
