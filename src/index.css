@@ -1,0 +1,149 @@
+:root {
+  --dark-gray: #7d8597;
+  --white: #ffffff;
+  --navy-blue: #54bab9;
+  --dark-blue: #007ea7;
+  --blue: #00a8e8;
+  --biscuit: #e9dac1;
+  --skyblue: #54bab9;
+  --lightskyblue: #9ed2c6;
+}
+body,
+h6,
+h5,
+h3,
+h2,
+h1,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  background-color: var(--dark-gray);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh);
+  /* width: 100%; */
+  /* gap: 1rem; */
+  background-image: url("https://camo.githubusercontent.com/8bb37a4e6370c9360e9d28c0ee2a741737f9ade649380473446dea380b65ee01/687474703a2f2f692e696d6775722e636f6d2f545269454863332e706e67");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.search > form > button {
+  width: 5rem;
+}
+.details > img:hover {
+  transform: rotateX(360deg);
+  transition: all 1s;
+}
+.details > img {
+  background-color: #007ea7;
+  border-radius: 50%;
+  width: 9rem;
+  margin: 1rem;
+  outline:3px solid #3596d1;
+  outline-offset: 2px;
+}
+.invalid{
+  color: red;
+}
+.incorrect-input{
+  border: 1px solid red !important;
+  outline: 2px solid red !important;
+}
+.same { 
+  padding: 0.5rem;
+  background-color: white;
+  color: black;
+  width: 95vw;
+  max-width: 38rem;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px rgba(227, 221, 221, 0.5);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+}
+.search > form > button {
+  width: 5rem;
+  margin: 0.5rem;
+}
+
+.same > form > button:hover {
+  cursor: pointer;
+  background-color: #2b86c5;
+  color: white;
+  border: 2px solid rgb(204, 204, 204);
+}
+.search > form > input {
+  width: calc(100% - 7rem);
+}
+.details-right {
+  display: inline-block;
+  margin: 2.5rem 0rem 0rem;
+  vertical-align: top;
+}
+.details-right > h2,
+h3,
+p {
+  margin-bottom: 0.7rem;
+}
+.details-buttons > button {
+  width: 12rem;
+  padding: 0.5rem 0rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  border-radius: 3px;
+}
+.details-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.details-buttons > button:hover {
+  background-color: #3596d1;
+  color: white;
+}
+.details-buttons > button > span {
+  display: block;
+  font-weight: bold;
+}
+
+.active{
+  outline:2px solid green  !important;
+}
+
+.followingList img, .followersList img{
+  margin-left: 1rem;
+  margin-top: 0.5 rem;
+  width: 2rem;
+  border-radius:  50%;
+}
+tr{
+  height: 2rem;
+}
+.load-more {
+  margin-top: -1rem;
+  border: none;
+}
+
+.load-more button { 
+  width: 100%;
+  padding: 5px 0px;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  transition: all 0.15s linear;
+  border-radius: 2px;
+}
+
+.load-more button:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+.footer{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
