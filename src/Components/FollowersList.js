@@ -1,11 +1,11 @@
 
 
 const FollowersList = ({ data, details }) => {
-    console.log(details.followers);
+  
     return (
 
         <div className="followersList same" >
-            {details.followers === undefined ? <h3>No followersList is Available</h3> : (
+            {details.followers === 0 ? <h3>No followersList is Available</h3> : (
                 <>
                     <h2>Followers List</h2>
                     <table  >
